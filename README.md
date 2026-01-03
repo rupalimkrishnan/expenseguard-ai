@@ -1,7 +1,6 @@
 # ExpenseGuard AI 
 
 ExpenseGuard AI is a backend application built using FastAPI that helps users track personal expenses and gain insights into their spending behavior.  
-This project is designed as a **learning-focused, resume-ready backend system** for beginners.
 
 ---
 

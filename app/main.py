@@ -6,8 +6,9 @@ from app.database import models
 
 
 from app.auth.routes import router as auth_router
-from app.expenses.routes import expense
+from app.expenses import routes as expense
 from app.expenses import models as expense_models
+from app.analytics.routes import router as analytics_router
 
 
 # 1️⃣ Create FastAPI app FIRST
@@ -20,6 +21,7 @@ app = FastAPI(
 # 2️⃣ Include routers
 app.include_router(auth_router)
 app.include_router(expense.router)
+app.include_router(analytics_router)
 
 # 3️⃣ Create database tables
 Base.metadata.create_all(bind=engine)
